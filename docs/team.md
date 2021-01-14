@@ -6,11 +6,11 @@ title:  Team
 # {{ page.title }}
 
 
-## USER 1
-***UCI Net ID***: ucinetid1
+## Jared Huang
+***UCI Net ID***: huangjd
 
-## USER 2
-***UCI Net ID***: ucinetid2
+## Ryan Liao
+***UCI Net ID***: rliao4
 
-## USER 3
-***UCI Net ID***: ucinetid3
+## Greta Yu
+***UCI Net ID***: gretay
