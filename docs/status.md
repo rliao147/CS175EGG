@@ -17,9 +17,9 @@ Image completion/prediction is useful in augmented reality applications. For exa
 
 ## Approach:
 
-## Evalution:
+## Evaluation:
 
-## Reamining Goals and Challenges:
+## Remaining Goals and Challenges:
 
 Our goal for the next four weeks is to have a finalized image completion software that is able to complete masked images using various masks upon different biomes. Currently, we are facing hardware constraints, as the training of images larger than 512x512 pixels is very inefficient. If we can figure out a solution to speed up our training data and require less hardware usage, it will be a lot easier to generate higher quality images. We have an efficient method of gathering training data, and training different biomes should be more or less the same. The next step is to move on to phase two of training our GAN, which is to recognize masked images (instead of generating images from scratch). This would require our generator to generate realistic images to fool our discriminator and have the unmasked pixels of the input closely represent those pixels in the output.
 
