@@ -3,38 +3,14 @@ layout: default
 title:  Home
 ---
 
-Source code: https://github.com/rliao147/ICE-CREAM
+[Source code](https://github.com/rliao147/ICE-CREAM)
 
-Reports:
+HOME PAGE
 
-- [Proposal](proposal.html)
-- [Status](status.html)
-- [Final](final.html)
+Welcome to our project page for CS 175! Our final goal of our program is to be able to complete masked images of specific biomes in minecraft. Currently, we have not yet achieved this goal, but we have a complete GAN (General Adversarial Network) that is able to generate new images of biomes based on its training data.
 
-What's Markdown (`.md`)?
+Here are some sample beach biome photos that we were able to generate from our GAN:
 
-Markdown is markup that lets you write hypertext (HTML) documents
-in easy-to-read and easy-to-write plain text.
-No angle brackets `<></>` required for
-paragraphs, lists, blockquotes, tables, etc.
-
-
-This is a paragraph (in Markdown). Some more
-text here.
-
-This is another paragraph.
-
-This is a list:
-
-- Orange
-- Apple
-- Blueberry
-
-$$x^2 = y^2$$
-
-
-Just getting started with Markdown?
-See the [HTML <-> Markdown Quick Reference (Cheat Sheet)][quickref].
 
 
 [quickref]: https://github.com/mundimark/quickrefs/blob/master/HTML.md
