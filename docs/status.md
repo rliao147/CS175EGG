@@ -19,7 +19,7 @@ Image completion/prediction is useful in augmented reality applications. For exa
 
 ## Approach:
 
-Data Collection
+<b>Data Collection</b>
 
 We decided to use the beach biome as our test biome, as the beach biome has many distinct features that we believed would be easy to spot (separation between ocean and sand, sand portion and ocean portion). To get images specifically of beach biomes, we manually went into Minecraft worlds, found beach biomes, and took screenshots. Although this dataset is very limited, we believe that it would be enough data to determine whether our GAN (see next section) was working or not. 
 
@@ -29,7 +29,8 @@ We used Malmo to process these screenshots into the desired format. Since it is 
 
 We then provide these images as training and test data for our GAN.
 
-# GAN
+<b>GAN</b>
+
 Our group’s approach was to use a generative adversarial network (GAN) to generate (and later) complete images. A GAN is made up of two neural networks, a generator, which generates fake images, and a discriminator, which classifies whether the images it receives are real or fake. The overall goal is to have the generator’s fake images fool the discriminator -- meaning that the discriminator will think that the generated images are real. 
 
 The generator model takes in a vector of points in latent space (essentially random points or noise). These points then flow through the generator’s neural network, becoming an image based on the generator’s previous learnings. Our generator model starts off with a dense layer of many nodes, allowing us to store multiple versions of the output image. We then reshape the image, allowing it to be used in the following layers. We used Conv2DTranspose layers to upsample our image (like the reverse of pooling). In particular, we used a stride of 2x2, which means that the image size doubles each time. Between each of the Conv2DTranspose layers, we use LeakyRelu (an activation function), which is used to transform an input signal to an output signal for the next layer. According to several websites, LeakyRelu is one of the best activation functions to use in image generation and classification (next section). We also used BatchNormalization, allowing us to standardize our inputs, giving us a more stable distribution. This is repeated until we have the image size that we want. The output layer is a Conv2D with 3 filters (3 channels (rgb) and a tanh activation to ensure that the output ranges are in the desired range of [-1,1], allowing us to easily output sample images).
@@ -42,15 +43,15 @@ Our next steps would be to modify our GAN to take in partially completed images,
 
 Discriminator Model:
 
-<img src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/discriminator_model.png" width="800" />
+<img src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/discriminator_model.png" width="400" />
 
 GAN Model:
 
-<img src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/gan_model.png" width="800" />
+<img src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/gan_model.png" width="400" />
 
 Generator Model:
 
-<img src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/generator_model.png" width="800" />
+<img src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/generator_model.png" width="400" />
 
 ## Evaluation:
 
@@ -66,7 +67,7 @@ Sample Photos:
 
 Output Results:
 
-<img src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/GAN_results.png" width="800" />
+<img src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/GAN_results.png" width="400" />
 
 
 ## Remaining Goals and Challenges:
