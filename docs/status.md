@@ -62,13 +62,10 @@ Our discrimnator’s loss value is very low meaning that it’s able to successf
 Qualitative results: Currently, we have our GAN output a sample of images every 500 epochs. This allows us to see sample images over time. We manually look at these images, and using our knowledge of Minecraft biome landscapes, we decide how realistic these images look. Depending on the results, we go and tweak our GAN, hoping to receive more realistic images. 
 
 Sample Latent Space Walk (Generative Model Output):
-<video width="320" height="240" controls>
-  <source src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/video-1613026645.mp4" type="video/mp4">
-</video>
 
-<video width="320" height="240" controls>
-  <source src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/video-1613026646.mp4" type="video/mp4">
-</video>
+<video src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/video-1613026645.mp4" width="320" height="200" controls preload></video>
+
+<video src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/video-1613026646.mp4" width="320" height="200" controls preload></video>
 
 Sample Photos:
 
