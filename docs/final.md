@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Proposal
+title: Final Proposal
 ---
 ## Video
 <p align="center">
