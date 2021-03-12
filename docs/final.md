@@ -3,10 +3,15 @@ layout: default
 title: Proposal
 ---
 ## Video
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rY_iIG83FSw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 ## Project Summary
 <p align="center">
   <img src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/ae_conv_5.png" width="1000"/>  
+</p>  
+<p align="center">
   <i>Given masked image ‘m’ our AI will complete ‘m’ to produce reconstructed image ‘p’ so that ‘p’ and the original image ‘a’ are similar</i>
 </p>
 
@@ -85,6 +90,8 @@ One of the qualitative evaluations has the autoencoder complete on the same imag
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/rliao147/ICE-CREAM/main/imgs/increasing_mask_final_2.png" width="1000"/>  
+</p>
+<p align="center">
   <i>Images are predicted with kernel size 7. Mask size starts as 5x5, increased by 5 every time.</i>
 </p>
 
